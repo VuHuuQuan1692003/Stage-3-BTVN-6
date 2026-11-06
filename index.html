@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rikkei Coffee - Cà phê chuẩn vị, Mùa hè sảng khoái</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== ĐẦU TRANG (HEADER) ==================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo">Rikkei Coffee</a>
+      
+      <!-- Nút ba gạch hiển thị trên thiết bị di động (< 768px) -->
+      <button class="hamburger-btn" type="button" aria-label="Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Thanh điều hướng menu trên máy tính (>= 768px) -->
+      <nav class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="#combo" class="nav-link">Combo</a></li>
+          <li class="nav-item"><a href="#register" class="nav-link">Đăng ký</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== NỘI DUNG CHÍNH (MAIN) ==================== -->
+  <main class="main-content">
+
+    <!-- ==================== PHẦN MỞ ĐẦU (HERO) ==================== -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <p class="hero-subtitle">Khuyến mãi mùa hè</p>
+        <h1 class="hero-title">Mùa hè sảng khoái, giảm đến 30%</h1>
+        <p class="hero-desc">
+          Từ 01/06 đến 31/08, các combo đồ uống mát lạnh và bánh ngọt tại Rikkei Coffee đều có giá ưu đãi.
+        </p>
+        <a href="#combo" class="btn btn-hero">Nhận ưu đãi</a>
+      </div>
+    </section>
+
+    <!-- ==================== LƯỚI COMBO (COMBO SECTION) ==================== -->
+    <section class="combo-section" id="combo">
+      <div class="container">
+        <h2 class="section-title">Combo mùa hè</h2>
+        <div class="combo-grid">
+          
+          <!-- Thẻ Combo 1 -->
+          <article class="combo-card">
+            <div class="combo-image">
+              <span class="discount-badge">-20%</span>
+            </div>
+            <h3 class="combo-name">Combo Sáng nhẹ</h3>
+            <p class="combo-desc">Cà phê sữa và bánh croissant</p>
+            <div class="combo-price-group">
+              <p class="combo-old-price">Giá gốc 54.000 đ</p>
+              <p class="combo-price">43.200 đ</p>
+            </div>
+          </article>
+
+          <!-- Thẻ Combo 2 -->
+          <article class="combo-card">
+            <div class="combo-image">
+              <span class="discount-badge">-15%</span>
+            </div>
+            <h3 class="combo-name">Combo Mát lạnh</h3>
+            <p class="combo-desc">Cold brew và trà đào</p>
+            <div class="combo-price-group">
+              <p class="combo-old-price">Giá gốc 74.000 đ</p>
+              <p class="combo-price">62.900 đ</p>
+            </div>
+          </article>
+
+          <!-- Thẻ Combo 3 -->
+          <article class="combo-card">
+            <div class="combo-image">
+              <span class="discount-badge">-25%</span>
+            </div>
+            <h3 class="combo-name">Combo Đôi bạn</h3>
+            <p class="combo-desc">Hai bạc xỉu và hai bánh croissant</p>
+            <div class="combo-price-group">
+              <p class="combo-old-price">Giá gốc 114.000 đ</p>
+              <p class="combo-price">85.500 đ</p>
+            </div>
+          </article>
+
+          <!-- Thẻ Combo 4 -->
+          <article class="combo-card">
+            <div class="combo-image">
+              <span class="discount-badge">-10%</span>
+            </div>
+            <h3 class="combo-name">Combo Giải nhiệt</h3>
+            <p class="combo-desc">Cacao đá xay và trà đào</p>
+            <div class="combo-price-group">
+              <p class="combo-old-price">Giá gốc 77.000 đ</p>
+              <p class="combo-price">69.300 đ</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KHỐI ĐĂNG KÝ (REGISTER SECTION) ==================== -->
+    <section class="register-section" id="register">
+      <div class="container">
+        <h2 class="section-title">Đăng ký nhận mã ưu đãi</h2>
+        <div class="register-card-wrapper">
+          <form class="register-card" action="#" method="post">
+            <div class="form-group">
+              <label for="fullname">Họ tên</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn An" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ban@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="branch">Chi nhánh</label>
+              <div class="select-wrapper">
+                <select id="branch" name="branch">
+                  <option value="hn">Hà Nội</option>
+                  <option value="hcm">TP. Hồ Chí Minh</option>
+                  <option value="dn">Đà Nẵng</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Nhận mã ưu đãi</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== CHÂN TRANG (FOOTER) ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-card">
+        <p class="footer-brand">Rikkei Coffee</p>
+        <p class="footer-text">21 Phố Mẫu, Quận Cầu Giấy, Hà Nội</p>
+        <p class="footer-text">Mở cửa 07:00 - 22:00 mỗi ngày</p>
+        <p class="footer-text">Điện thoại: 0900 000 000</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
